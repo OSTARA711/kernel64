@@ -15,6 +15,22 @@ This project follows the freestanding model:
 * No malloc (there is no dynamic memory allocator, initially).
 
 
+## Repository Structure
+
+```
+kernel64/
+├── README.md
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── Makefile
+├── linker.ld
+├── grub.cfg
+├── src/
+│   ├── kernel.c
+│   └── boot.S
+└── build/
+```
+
 ## Architecture
 
 * Target: x86_64
