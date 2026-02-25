@@ -7,15 +7,13 @@ Contributions are accepted, but please follow the guidelines below to ensure a c
 
 ## Branches
 
-¤ main – Protected branch
+¤ main (protected branch):
 
    * Only project maintainers can merge directly.
 
    * Must remain stable at all times.
 
-¤ Feature branches
-
-For contributors and alike.
+¤ branches with features (for contributors and alike):
 
    * All contributors should create a new branch for each feature or fix:
 
