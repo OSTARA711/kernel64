@@ -22,6 +22,7 @@ kernel64/
 ├── README.md
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
+├── .gitignore
 ├── Makefile
 ├── linker.ld
 ├── grub.cfg
@@ -30,6 +31,34 @@ kernel64/
 │   └── boot.S
 └── build/
 ```
+
+NOTE: As an optional future refinement (not needed yet), once the project grows beyond a certain milestone (M3 or more), it may be necessary to add:
+
+```
+├── include/
+        kernel/
+├── arch/
+        x86_64/
+```
+
+ATTENTION: You should NOT commit the build/ directory, it must be generated, not versioned. Hence, the following code was added to the .gitignore file:
+
+```
+build/
+*.o
+*.bin
+*.elf
+*.iso
+```
+
+Then, as a strong suggestion and because you do not want to commit build artifacts, run in the Local machine:
+
+```
+rm -rf build
+git add .gitignore
+git commit -m "Add build artifacts to .gitignore"
+```
+
 
 ## Architecture
 
