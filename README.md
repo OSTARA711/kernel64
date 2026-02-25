@@ -59,6 +59,18 @@ git add .gitignore
 git commit -m "Add build artifacts to .gitignore"
 ```
 
+## Clone Instructions SSH
+
+```
+git clone git@github.com:OSTARA711/kernel64.git
+```
+
+You need to configure your identity:
+
+```
+git config --global user.name "Your Name"
+git config --global user.email "yourname@example.com"
+```
 
 ## Architecture
 
