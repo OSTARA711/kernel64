@@ -1,10 +1,10 @@
 # Kernel64
 
-Experimental x86_64 kernel built in a freestanding environment.
+An experimental Linux x86_64 kernel built in a freestanding environment, with Apache License v2
 
 The C99 standard defines two types of implementations: hosted and freestanding.
-In a hosted implementation, a full C standard library environment is available.
-In a freestanding implementation, execution does not require an operating system.
+As in a hosted implementation, a full C standard library environment is available.
+But in a freestanding implementation, execution does not require an operating system.
 
 This project follows the freestanding model:
 
@@ -13,6 +13,25 @@ This project follows the freestanding model:
 * No printf
 
 * No malloc (there is no dynamic memory allocator, initially).
+
+
+## Purpose of Kernel64
+
+Kernel64 is an educational project designed to understand how software interacts directly with hardware.
+
+Contributors are encouraged to study C fundamentals in their free time and while applying C99 concepts in the kernel environment.
+
+The objective is not to build a production Linux OS, but to understand the fundamental mechanisms underlying modern kernels such as the Linux kernel:
+
+* Boot process mechanics
+
+* Memory layout and control
+
+* Interrupt handling
+
+* Low-level execution flow
+
+The evolution of this project is documented in CHANGELOG.md
 
 
 ## Repository Structure
@@ -72,7 +91,7 @@ git config --global user.name "Your Name"
 git config --global user.email "yourname@example.com"
 ```
 
-## Architecture
+## Architecture of Kernel64
 
 * Target: x86_64
 
@@ -85,25 +104,6 @@ git config --global user.email "yourname@example.com"
 * Emulator: QEMU
 
 The project is compiled using a freestanding cross-compilation toolchain (x86_64-elf-gcc) to avoid host system dependencies. GCC is available at https://gcc.gnu.org
-
-
-## Purpose of Kernel64
-
-Kernel64 is an educational project designed to understand how software interacts directly with hardware.
-
-Contributors are encouraged to study C fundamentals in their free time and while applying C99 concepts in the kernel environment.
-
-The objective is not to build a production Linux OS, but to understand the fundamental mechanisms underlying modern kernels such as the Linux kernel:
-
-* Boot process mechanics
-
-* Memory layout and control
-
-* Interrupt handling
-
-* Low-level execution flow
-
-The evolution of this project is documented in CHANGELOG.md
 
 
 ## Milestones of Kernel64
